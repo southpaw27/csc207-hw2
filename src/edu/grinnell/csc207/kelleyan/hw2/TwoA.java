@@ -30,6 +30,13 @@ public class TwoA {
 	 * 
 	 */
 	public static boolean isOdd(int x) {
+		/*
+		 * Here I change the integer to a string to extract
+		 * the last digit of the number and compare it to the
+		 * odd numbers from 1 to 9. Easiest way to find an
+		 * odd number, especially for large numbers (that is,
+		 * without using modulus or division or multiplication)
+		 */
 		String number = Integer.toString(x);
 		String lastnum = number.substring(number.length() - 1);
 		String[] vals = {"1", "3", "5", "7", "9"};
@@ -56,6 +63,7 @@ public class TwoA {
 			return 0;
 		else {
 			int sum = 0;
+			//+=2 always hits odd numbers when starting at 1
 			for (int x = 1; x < n; x += 2) {
 				sum += x;
 			}
@@ -78,6 +86,10 @@ public class TwoA {
 			return false;
 		else {
 			int prod;
+			/*
+			 * This for loop allows for no repetition
+			 * in multiplying the numbers together
+			 */
 			for(int x = 0; x <= (ints.length - 2); x++) {
 				for (int y = x + 1; y <= (ints.length - 1); y++) {
 					prod = ints[x] * ints[y];

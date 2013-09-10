@@ -14,7 +14,5 @@ public class TestTwoB {
 		assertEquals("1 and 26 = 13", 13, TwoB.average(1,26));
 		assertEquals("Extreme, overflow case max", Integer.MAX_VALUE, TwoB.average(Integer.MAX_VALUE, Integer.MAX_VALUE));
 		assertEquals("Extreme, overflow case min", Integer.MIN_VALUE, TwoB.average(Integer.MIN_VALUE, Integer.MIN_VALUE));
-		
 	}
-
 }

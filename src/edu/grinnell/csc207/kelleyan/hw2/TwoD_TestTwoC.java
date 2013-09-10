@@ -5,7 +5,10 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class TwoD_TestTwoC {
-
+/*
+ * For all of the tests, the first number is considered
+ * true and is the number being compared to.
+ */
 	@Test
 	public void test_ratSum() {
 		assertEquals(3.68, TwoC.rat_sum(1.23,2.45), 0.5);
@@ -50,6 +53,5 @@ public class TwoD_TestTwoC {
 	public void test_roundRat() {
 		assertEquals(1, TwoC.round_rat(1.12));
 		assertEquals(3, TwoC.round_rat(3.99));
-	}
-	
+	} // test_roundRat
 }
