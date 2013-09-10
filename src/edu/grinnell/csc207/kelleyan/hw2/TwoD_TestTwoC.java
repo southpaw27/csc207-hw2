@@ -9,6 +9,11 @@ public class TwoD_TestTwoC {
  * For all of the tests, the first number is considered
  * true and is the number being compared to.
  */
+	
+/*
+ * The assertEquals used for these tests were found on:
+ * http://junit.sourceforge.net/javadoc/org/junit/Assert.html
+ */
 	@Test
 	public void test_ratSum() {
 		assertEquals(3.68, TwoC.rat_sum(1.23,2.45), 0.5);
